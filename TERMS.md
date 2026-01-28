@@ -120,5 +120,4 @@ These Terms are governed by the laws of **Florida**, excluding conflict-of-law r
 
 ## 21. Contact
 Local AI Solutions  
-**Address:** 86264 Express Ct, Yulee, FL 32097  
 **Email:** localmind1234@gmail.com
