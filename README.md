@@ -8,5 +8,5 @@ InferenceDesk is a desktop application by **Local AI Solutions** for running loc
 By downloading or using InferenceDesk, you agree to the **Terms of Service** and **Privacy Policy**.
 
 ## Legal
-- Terms of Service: ./TERMS.md
-- Privacy Policy: ./PRIVACY.md
+- [Terms of Service](./TERMS.md)
+- [Privacy Policy](./PRIVACY.md)
