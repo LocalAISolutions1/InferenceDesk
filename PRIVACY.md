@@ -1,126 +1,92 @@
-# InferenceDesk Privacy Policy
-**Company:** Local AI Solutions (“Local AI Solutions,” “we,” “us”)  
-**Product:** InferenceDesk Desktop Application (the “App”)  
-**Effective Date:** February 1, 2026  
-**Version:** 1.0
+# InferenceDesk
 
-This Privacy Policy explains how Local AI Solutions collects, uses, and shares information in connection with the InferenceDesk App and related services (collectively, the “Services”).
+InferenceDesk is a **Windows desktop app** by **Local AI Solutions** for running local, on-device inference with llama-compatible open-source models (CPU or GPU).
 
-If you do not agree with this Privacy Policy, do not use the App.
+> **Beta release (free)**
+>
+> InferenceDesk is currently in **beta** and is **free to use** while I collect feedback, resolve issues, and improve stability.
+>
+> If you run into issues or have ideas, please email **localmind1234@gmail.com**.
 
----
+## Download
 
-## 1) Key Idea: Local-First
-InferenceDesk is designed to run inference locally on your computer. In typical use:
-- Your prompts, files, and model outputs stay on your device.
-- We do not receive your prompts or model outputs unless you explicitly choose a feature that sends data to us (for example, sending a support bundle you generate).
+- **Windows (Installer)**: https://pub-277c819c500843e1b195cb5fa8d0a929.r2.dev/apps/builds/win/InferenceDesk-1.0.0-Setup.exe
 
-Some features may connect to the internet (for example: update checks, downloading models, fetching a model list, license verification for paid features, or optional crash reporting). This Policy describes those cases.
+By downloading or using InferenceDesk, you agree to the **Terms of Service** and **Privacy Policy**.
 
----
+- **Terms**: [TERMS.md](./TERMS.md)  
+- **Privacy**: [PRIVACY.md](./PRIVACY.md)
 
-## 2) Information We Collect
+> **Windows Defender / SmartScreen notice**
+>
+> When you run the installer, Windows may show a “Windows protected your PC” screen (SmartScreen).  
+> If that happens, click **More info** → **Run anyway**.
+>
+> I’m in the process of publishing a signed build so this prompt should go away in a future release.
 
-### A. Information you provide directly
-We may collect information you provide when you:
-- Contact support (e.g., email address and the content of your message)
-- Submit feedback
-- Choose to send diagnostic logs or a support bundle
-- Create an account or purchase paid features (if/when available)
+## What you can do with InferenceDesk
 
-### B. Information processed locally on your device
-The App may process locally:
-- Prompts, chats, text, files, and other inputs you load into the App
-- Outputs produced by models
-- Model configuration, settings, and local session history (if you enable it)
+InferenceDesk is built for people who want **private, local AI capabilities** on their own machine.
 
-This information is stored on your device (where applicable). We do not automatically collect it.
+- Run **llama-compatible** open-source models locally (CPU and GPU)
+- Run models **side-by-side** for comparisons (A/B)
+- **Knowledge / RAG**: upload documents (CSV, TXT, MD, PDF) and use them as context in chat
+- Tune **prompt + inference settings** (and other model parameters)
+- Customize **appearance** and chat experience
+- **Structured output** support (for workflows that need predictable formats)
+- **Speculative decoding** support (where compatible)
+- **Plugins** (capability support for extending the app)
+- **Developer sandbox** with logs and **callable endpoints** so you can invoke the model programmatically
+- **Hugging Face integration** for browsing/downloading models
+- Engine/runtime support: **CPU, CUDA, ROCm, Vulkan**
+- **Harmony framework support** for OSS-GPT style models *(experimental; still in progress)*
 
-### C. Technical data (limited) from network features
-If the App performs network actions (such as checking for updates or downloading files), our servers or service providers may receive basic technical information such as:
-- IP address
-- Timestamp of the request
-- Requested URL/resource
-- User-agent / app version (if sent)
-- Basic error codes
+## Requirements
 
-This is common for hosting and content delivery and is generally required to operate downloads/updates securely.
+- **OS**: Windows 10 or 11
+- **Hardware**: Sufficient RAM and disk space for the app and your models  
+  - Optional GPU acceleration (NVIDIA CUDA, AMD ROCm, or Vulkan) for faster inference
+- **Network**: Optional  
+  - Needed for downloading models/runtimes and app updates
 
-### D. Optional diagnostics (crash reports / telemetry)
-Depending on your App version, the App may offer **optional** diagnostic collection such as crash reports (e.g., stack traces, error logs) and basic device/app info (OS version, App version, architecture).
+## Quick start
 
-If diagnostics are enabled, we aim to exclude prompt content and model outputs. However, logs can sometimes contain sensitive information depending on your configuration and usage. Review any support bundle before sending.
+1. **Download and install**  
+   Run the Windows installer:  
+   https://pub-277c819c500843e1b195cb5fa8d0a929.r2.dev/apps/builds/win/InferenceDesk-1.0.0-Setup.exe
 
----
+2. **Open InferenceDesk**  
+   Sign in or continue as guest.
 
-## 3) How We Use Information
-We use information to:
-- Provide, maintain, and improve the App and Services
-- Deliver updates and downloads
-- Respond to support requests
-- Prevent abuse, fraud, and security issues
-- Process purchases and subscriptions (if/when offered)
-- Comply with legal obligations
+3. **Choose a model**  
+   Click **Choose model**, select a model (or open **Models** in the sidebar to add one), and wait until it shows:  
+   **Model: \<name\>**
 
----
+4. **Chat**  
+   Type in the message box and click **Send**.
 
-## 4) Sharing and Disclosure
-We do not sell your personal information.
+For more detail, see:
+- [Getting started](docs/how-to/how-to-get-started.md)
+- [User guides](docs/README.md)
 
-We may share information in limited circumstances:
-- **Service providers** (hosting, download delivery, error monitoring, payment processors if paid plans exist). They may process data on our behalf under contractual restrictions.
-- **Legal and safety** (to comply with law, respond to lawful requests, protect rights, prevent fraud/abuse, or address security issues).
-- **Business transfers** (if we are involved in a merger, acquisition, financing, or sale of assets, information may be transferred as part of that transaction).
+## Documentation
 
-### Third-party models and licenses
-The App may help you download or run third-party models, weights, tokenizers, or tools. Those third parties may have their own privacy practices and license terms. We are not responsible for third-party practices.
+- **[User guides](docs/README.md)** — Getting started, running a model, chat, models, downloads, settings, Knowledge, and updates
+- **[For developers](docs/plugins-spec.md)** — Plugin specification  
+- **[Runtime publishing](docs/runtime-publishing.md)** — How to publish runtimes
 
----
+## Support / Feedback
 
-## 5) Payments (Future)
-If we offer paid features, purchases will typically be handled by a payment processor. We would receive limited billing-related information (for example: customer email, subscription status, and transaction identifiers). We generally do **not** receive full credit card numbers.
+- Email: **localmind1234@gmail.com**
+- Issues: Use GitHub Issues in this repo (recommended for bugs and feature requests)
 
-When paid features launch, we may update this Policy with specific payment details.
+When reporting bugs, include:
+- InferenceDesk version
+- Windows version
+- GPU type (if any)
+- Steps to reproduce + logs/screenshots if available
 
----
+## Legal
 
-## 6) Data Retention
-- **Local data:** Prompts/outputs/history stored by the App remain on your device until you delete them (or uninstall the App), subject to your settings.
-- **Support communications:** We may retain support emails and attachments for as long as necessary to address the request and maintain business records.
-- **Server logs:** Requests to download/update endpoints may be retained for a limited time for security and operational purposes.
-
----
-
-## 7) Security
-We use reasonable administrative, technical, and organizational safeguards designed to protect information. No system is 100% secure; you are responsible for securing your device and any sensitive data you process locally.
-
----
-
-## 8) Your Choices and Controls
-Depending on your App version, you may be able to:
-- Disable optional diagnostics (if offered)
-- Control whether chat history or logs are stored locally
-- Delete local data (history, cached files, downloaded artifacts)
-- Choose whether to send support bundles/logs
-
----
-
-## 9) Children’s Privacy
-InferenceDesk is not intended for children under 13 (or the minimum age required by your jurisdiction). We do not knowingly collect personal information from children.
-
----
-
-## 10) International Users
-If you access the Services from outside the United States, information may be processed in the United States or other locations where we or our service providers operate.
-
----
-
-## 11) Changes to This Policy
-We may update this Privacy Policy from time to time. If we make material changes, we will post the updated Policy and update the Effective Date. Your continued use of the App after the effective date means you accept the updated Policy.
-
----
-
-## 12) Contact Us
-Local AI Solutions  
-Attn: Privacy  
-Email: localmind1234@gmail.com
+- [Terms of Service](./TERMS.md)
+- [Privacy Policy](./PRIVACY.md)
