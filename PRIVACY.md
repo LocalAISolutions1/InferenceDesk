@@ -123,7 +123,4 @@ We may update this Privacy Policy from time to time. If we make material changes
 ## 12) Contact Us
 Local AI Solutions  
 Attn: Privacy  
-86264 Express Ct  
-Yulee, FL 32097  
-United States  
 Email: localmind1234@gmail.com
