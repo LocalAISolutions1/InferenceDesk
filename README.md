@@ -11,6 +11,16 @@ InferenceDesk is a **Windows desktop app** by **Local AI Solutions** for running
 
 - **Windows (Installer)**: https://pub-277c819c500843e1b195cb5fa8d0a929.r2.dev/apps/builds/win/InferenceDesk-1.0.0-Setup.exe
 
+### Security verification (recommended)
+
+You can verify the installer is clean and unchanged before running it:
+
+- **VirusTotal scan report (installer)**: https://www.virustotal.com/gui/file/1e8b70cf06dc8062fdccf3acecf41d600b297a07cdc31df633177c236435812e?nocache=1
+- **SHA-256 (installer)**: `1E8B70CF06DC8062FDCCF3ACECF41D600B297A07CDC31DF633177C236435812E`
+
+Verify SHA-256 on Windows (PowerShell):
+Get-FileHash ".\InferenceDesk-1.0.0-Setup.exe" -Algorithm SHA256
+
 By downloading or using InferenceDesk, you agree to the **Terms of Service** and **Privacy Policy**.
 
 - **Terms**: [TERMS.md](./TERMS.md)  
