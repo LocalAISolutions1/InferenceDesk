@@ -44,9 +44,10 @@ By downloading or using InferenceDesk, you agree to the **Terms of Service** and
 
 - Run llama-compatible open-source models locally (CPU and GPU)
 - Chat interface: multiple conversations; choose and switch models
+- Search the web using your opensource model using Brave API Key
 - Models page: browse, add, pin, and delete models; configure parameters
 - Download models and runtimes from inside the app
-- **Knowledge**: upload documents (CSV, TXT, MD, PDF) and use them as context in chat
+- **Knowledge**: upload documents (XLSX, DOCX, PPX, PDF, CSV, etc.) and use them as context in chat
 - Settings: General, System (hardware), Engines (runtimes), Models hub, Account
 - In-app updates (check and install from **Settings → General**)
 
