@@ -9,7 +9,7 @@ InferenceDesk is a **Windows desktop app** by **Local AI Solutions** for running
 
 ## Download
 
-- **Windows (Installer)**: https://pub-277c819c500843e1b195cb5fa8d0a929.r2.dev/apps/builds/win/InferenceDesk-1.0.0-Setup.exe
+- **Windows (Installer)**: https://pub-277c819c500843e1b195cb5fa8d0a929.r2.dev/apps/builds/win/InferenceDesk-1.0.1-Setup.exe
 
 ### Security verification (recommended)
 
